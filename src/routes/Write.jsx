@@ -70,13 +70,9 @@ const Write = () => {
 
     mutation.mutate(data);
   };
-
-
-  const publishableKey = import.meta.env.VITE_CLERK_PUBLISHABLE_KEY;
+  
   return (
     <div className="h-[calc(100vh-64px)] md:h-[calc(100vh-80px)] flex flex-col gap-6">
-      <p>hello world</p>
-      <p>{publishableKey}</p>
       <h1 className="text-cl font-light">Create a New Post</h1>
       <form onSubmit={handleSubmit} className="flex flex-col gap-6 flex-1 mb-6">
         <Upload type="image" setProgress={setProgress} setData={setCover}>
