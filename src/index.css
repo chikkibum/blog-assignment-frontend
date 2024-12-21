@@ -1,0 +1,47 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --primary: #2C3E50;
+  --secondary: #E74C3C;
+  --background: #F5F6FA;
+  --text: #2C3E50;
+  --accent: #3498DB;
+}
+
+body {
+  background-color: var(--background);
+  width: 100vw;
+  overflow-x: hidden;
+  font-family: "Montserrat", sans-serif;
+  color: var(--text);
+}
+
+/* Button Styles */
+.btn-primary {
+  @apply bg-[#2C3E50] hover:bg-[#34495E] text-white transition-colors duration-300;
+}
+
+/* Card Styles */
+.card {
+  @apply bg-white rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300;
+}
+
+/* Animation */
+.animatedButton {
+  animation-duration: 8000ms;
+}
+
+/* Quill Editor Styles */
+.ql-container {
+  @apply border-none rounded-b-xl !important;
+}
+
+.ql-toolbar {
+  @apply border-none rounded-t-xl bg-gray-50 !important;
+}
+
+.ql-editor {
+  @apply border-none min-h-[200px] !important;
+}
